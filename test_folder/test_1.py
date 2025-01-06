@@ -5,13 +5,13 @@ import google.generativeai as _genai
 
 class GenAI:
     def __init__(self, query='add the proper documentation string'):
-        '''success'''
+        """success"""
         _genai.configure(api_key=config.API_KEY)
         self.model = _genai.GenerativeModel(config.GENERATIVE_MODEL)
         self.query = query
 
     def genarate_ai_docstring(self, function_name, start_pos, end_pos):
-        '''ssss'''
+        """ssss"""
         pass
 
     def my_docstring_less_function(a, b, c, d):
