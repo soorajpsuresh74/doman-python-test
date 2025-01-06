@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcd46d24-5401-45e7-b672-672eb181e5f1" name="Changes" comment="Initial commit for python">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Doc-Man-r2-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Doc-Man-r2-Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/treeAnalyzerClasses/PyAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/treeAnalyzerClasses/PyAnalyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_folder/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_folder/test_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "soorajpsuresh74"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;soorajpsuresh74&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/soorajpsuresh74/doman-python-test.git",
-    "accountId": "28779c97-c809-4cfd-93aa-7d695f8535f6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/soorajpsuresh74/doman-python-test.git&quot;,
+    &quot;accountId&quot;: &quot;83d0d8cb-8382-4dbc-8457-e5add69e3b75&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -50,13 +51,16 @@
     "Python.PyAnalyzer.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/bornd/Desktop/Doc-Man-r2-Python/core"
+    "last_opened_file_path": "C:/Users/sooraj.ps/PycharmProjects/doman-python-test",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sooraj.ps\PycharmProjects\doman-python-test" />
       <recent name="C:\Users\bornd\Desktop\Doc-Man-r2-Python\core" />
       <recent name="C:\Users\bornd\Desktop\Doc-Man-r2-Python" />
     </key>
@@ -119,7 +123,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -146,5 +150,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit for python" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit for python" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
