@@ -1,15 +1,3 @@
-PYTHON_QUERY_3= """
-(function_definition
-    name: (identifier) @function_name
-    parameters: (parameters) @parameters
-    return_type: (type) @return_type
-    body: (block
-        (expression_statement
-            (string) @function_docstring
-        )?
-    ) @function_block)
-"""
-
 # (class_definition
 #         name: (identifier) @class_name
 #         body: (block
@@ -32,4 +20,14 @@ PYTHON_QUERY = """
         (expression_statement
             (string) @docstring)?
     ) @function_block)
+"""
+PYTHON_CLASS_QUERY = """
+(class_definition
+  name: (identifier) @class_name
+  superclasses: (argument_list(attribute(identifier)@superclass))
+  body: (block
+          (expression_statement
+              (string) @docstring)?
+        ) @class_body
+  )
 """

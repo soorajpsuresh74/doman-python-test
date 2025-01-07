@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcd46d24-5401-45e7-b672-672eb181e5f1" name="Changes" comment="Initial commit for python">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bcd46d24-5401-45e7-b672-672eb181e5f1" name="Changes" comment="This is a fixed push from wsl">
       <change beforePath="$PROJECT_DIR$/.idea/Doc-Man-r2-Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Doc-Man-r2-Python.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/codeUpdater.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/codeUpdater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/docman.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/docman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/generator/docstringGenarator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/generator/docstringGenarator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/treeAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/treeAnalyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/treeAnalyzerClasses/PyAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/treeAnalyzerClasses/PyAnalyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/treeSitter/treeSitterQueryClasses.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/treeSitter/treeSitterQueryClasses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +53,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.PyAnalyzer.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/sooraj.ps/PycharmProjects/doman-python-test",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.PyAnalyzer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sooraj.ps/PycharmProjects/doman-python-test&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sooraj.ps\PycharmProjects\doman-python-test" />
@@ -144,12 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1736139461919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="This is a fixed push from wsl">
+      <option name="closed" value="true" />
+      <created>1736178634320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736178634320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit for python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for python" />
+    <MESSAGE value="This is a fixed push from wsl" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is a fixed push from wsl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -157,6 +173,10 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/treeSitter/treeSitterQueryClasses.py</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

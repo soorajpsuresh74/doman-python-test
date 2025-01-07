@@ -1,10 +1,11 @@
-from core.queries import PYTHON_QUERY
+from core.queries import PYTHON_QUERY, PYTHON_CLASS_QUERY
 from core.treeSitter.treeSitterLanguage import PYTHON_LANGUAGE, KOTLIN_LANGUAGE, JAVA_LANGUAGE, HTML_LANGUAGE
 
 
 class PythonQuery:
     language = PYTHON_LANGUAGE
-    query = language.query(PYTHON_QUERY)
+    function_query = language.query(PYTHON_QUERY)
+    class_query = language.query(PYTHON_CLASS_QUERY)
 
 
 class KotlinQuery:
@@ -24,7 +25,7 @@ class HtmlQuery:
 
 QUERY_CLASS_MAPPINGS = {
     '.py': PythonQuery(),
-    '.kt': KotlinQuery(),
-    '.java': JavaQuery(),
-    '.html': HtmlQuery(),
+    # '.kt': KotlinQuery(),
+    # '.java': JavaQuery(),
+    # '.html': HtmlQuery(),
 }

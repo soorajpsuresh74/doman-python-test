@@ -42,3 +42,35 @@ async def docstring_generator_function_for_python(function_dict):
         print(f"Exception occurred {e}")
         logger.error("try-catch fail in docstring_generator_function_for_python")
         return None
+
+async def docstring_generator_class_function_for_python(class_dict):
+    try:
+        prompt = f"""
+        Class Name: {class_dict.get('class_name')}
+        Superclass: {class_dict.get('parameters')}
+        class Body:
+        {class_dict.get('class_body')}
+        Please generate a docstring for the above class."""
+        logger.info(prompt)
+
+        response = model.generate_content(prompt)
+        logger.info(response)
+
+        if response and response.candidates:
+            docstring = response.candidates[0].content.parts[0].text
+            match = re.search(r'"""(.*?)"""', docstring, re.DOTALL)
+
+            if match:
+                generated_docstring = match.group(1).strip()
+                logger.info(generated_docstring)
+                return generated_docstring
+            else:
+                logger.error("no match in docstring_generator_class_function_for_python")
+                return None
+        else:
+            return None
+
+    except Exception as e:
+        print(f"Exception occurred {e}")
+        logger.error("try-catch fail in docstring_generator_class_function_for_python")
+        return None

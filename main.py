@@ -3,8 +3,8 @@ import asyncio
 
 
 async def start_docman() -> None:
+    # docman = Docman(r"C:\Users\sooraj.ps\Desktop\django-ecommerce-project-amazon-clone")
     docman = Docman(r"test_folder")
-    # docman = Docman(r"C:\Users\bornd\Desktop\Doc-Man-r1\core")
     await docman.process_directory()
 
 

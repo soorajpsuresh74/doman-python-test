@@ -20,11 +20,11 @@ def make_syntax_tree(code: str, language_parser) -> Tree:
 
 
 class Docman:
-    def __init__(self, directory):
+    def __init__(self, directory) -> None:
         self.directory = directory
         self.process_directory()
 
-    async def process_directory(self):
+    async def process_directory(self) -> None:
         if not os.path.exists(self.directory):
             logger.error(f"Directory does not exist: {self.directory}")
             raise Exception(f"Directory does not exist: {self.directory}")
@@ -47,7 +47,7 @@ class Docman:
 
                             tree = make_syntax_tree(code, language_parser)
 
-                            await analyse_tree(tree, query.query, code, language)
+                            await analyse_tree(tree, query, code, language)
 
                             logger.info(f"Successfully processed file: {file_path}")
                     except Exception as e:

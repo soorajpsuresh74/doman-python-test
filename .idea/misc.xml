@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (Doc-Man-r2-Python)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 virtualenv at C:\Users\sooraj.ps\PycharmProjects\doman-python-test\.docman-env" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="tree_sitter_env" project-jdk-type="Python SDK" />
 </project>
