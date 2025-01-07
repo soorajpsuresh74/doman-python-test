@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from tree_sitter import Tree
 
@@ -20,9 +21,13 @@ def make_syntax_tree(code: str, language_parser) -> Tree:
 
 
 class Docman:
-    def __init__(self, directory) -> None:
+    def __init__(self, directory: str, parent_directory: str) -> None:
         self.directory = directory
-        self.process_directory()
+        self.project_name = os.path.basename(os.path.normpath(directory))
+        self.target_directory = os.path.join(parent_directory, self.project_name)
+
+        if not os.path.exists(self.target_directory):
+            os.makedirs(self.target_directory)
 
     async def process_directory(self) -> None:
         if not os.path.exists(self.directory):
@@ -32,8 +37,12 @@ class Docman:
         logger.info(f"Processing directory: {self.directory}")
 
         for root, dirs, files in os.walk(self.directory):
-            if not files:
-                continue
+            # Compute relative path to replicate the directory structure
+            relative_path = os.path.relpath(root, self.directory)
+            target_root = os.path.join(self.target_directory, relative_path)
+
+            if not os.path.exists(target_root):
+                os.makedirs(target_root)
 
             for file_name in files:
                 file_path = os.path.join(root, file_name)
@@ -47,9 +56,21 @@ class Docman:
 
                             tree = make_syntax_tree(code, language_parser)
 
-                            await analyse_tree(tree, query, code, language)
+                            updated_code = await analyse_tree(tree, query, code, language)
+
+                            target_file_path = os.path.join(target_root, file_name)
+                            with open(target_file_path, 'w', encoding="utf-8") as target_file:
+                                target_file.write(updated_code)
 
                             logger.info(f"Successfully processed file: {file_path}")
                     except Exception as e:
                         logger.error(f"An exception occurred while processing {file_path}: {e}")
                         print(f"An exception occurred in the process directory function as {e}")
+                else:
+                    # Copy non-Python files to the target directory
+                    try:
+                        target_file_path = os.path.join(target_root, file_name)
+                        shutil.copy2(file_path, target_file_path)
+                        logger.info(f"Copied non-Python file to {target_file_path}")
+                    except Exception as e:
+                        logger.error(f"Failed to copy file {file_path} to {target_file_path}: {e}")

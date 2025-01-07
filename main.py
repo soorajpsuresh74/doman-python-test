@@ -4,7 +4,7 @@ import asyncio
 
 async def start_docman() -> None:
     # docman = Docman(r"C:\Users\sooraj.ps\Desktop\django-ecommerce-project-amazon-clone")
-    docman = Docman(r"test_folder")
+    docman = Docman(r"test_folder", "output")
     await docman.process_directory()
 
 
